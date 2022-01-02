@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+body{
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, sans-serif;
+    font-size: 1em;
+}
+
+main{
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 940px){
+    main{
+        width: 95%;
+    }
+}
+
+h1 {
+    text-align: center;
+    color: #c94c4c;
+}
+
+/*---------------
+      FORM
+ --------------*/
+#bugWrapper{
+    margin-bottom: 2em;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#bugInput{
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+form{
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.row{
+     display: flex;
+     flex-direction: row;
+     margin-bottom: 0.4em;
+     width: 100%;
+ }
+
+@media (max-width: 710px){
+    .row{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+.colLabel{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 15%;
+}
+
+.colInp{
+    width: 84%;
+}
+
+.colInp1{
+    width: 34.4%;
+}
+
+#title, #author{
+    width: 100%;
+}
+
+#right{
+    text-align: right;
+    margin-right: 1em;
+}
+
+textarea{
+    width: 100%;
+}
+
+.btnRight{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    margin-bottom: 0.4em;
+    justify-content: flex-end;
+}
+
+/*------------------
+       BUTTONS
+--------------------*/
+#btnFields{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-top: 1px solid black;
+    width: 100%;
+    background-color: #b1cbbb;
+}
+
+#btnFields button, #btnFields select, #add {
+    margin: 0.5em;
+    padding: 0.5em;
+    border: 1px solid #232925;
+    border-radius: 7px;
+}
+
+#btnFields button:hover, #btnFields select:hover, #add:hover {
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.20), 0 7px 40px 0 rgba(0,0,0,0.15);
+}
+
+#btnFields button:focus, #btnFields select:focus, #add:focus {
+    background-color: #232925;
+    color: white;
+}
+
+button, select{
+    font-weight: bold;
+}
+
+.row-60{
+    width: 70%;
+}
+
+
+.row-30{
+    width: 30%;
+}
+
+#filterAuthor, #filter{
+    float: right;
+}
+
+/*------------------
+     BUG ENTRIES
+--------------------*/
+
+.bugDescription p{
+    margin: 0.4em 0 0.7em 0;
+}
+
+.bugEntry hr{
+    margin-bottom: 1em;
+}
+
+.bugHeader{
+    margin-left: 0.4em;
+}
+
+.closed{
+    color: darkgrey;
+}
+
+.closed input{
+    border-color: darkgrey;
+}
+
+.hide{
+    display: none;
+}
